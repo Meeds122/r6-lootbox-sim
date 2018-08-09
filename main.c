@@ -44,12 +44,12 @@ void simulateGame(struct Player *player){
             player->current_chance = .02; // player wins game and gets loot box. chance to win resets.
         }
         else{
-            player->current_chance = player->current_chance + .025; // player win game but gets no loot box
+            player->current_chance = player->current_chance + .020; // player win game but gets no loot box
         }
     }
     else{
         player->losses++;
-        player->current_chance = player->current_chance + .020; // player loses game increase chance to win by less
+        player->current_chance = player->current_chance + .015; // player loses game increase chance to win by less
     }
 }
 
