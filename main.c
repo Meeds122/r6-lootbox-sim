@@ -35,10 +35,7 @@ int rollPlayerLootbox(float current_chance){
     int rand_result = rand();
     int comparator1 = rand_result%1000;
     int comparator2 = current_chance * 1000;
-    if( comparator1 <= comparator2){
-        return 1;
-    }
-    return 0;
+    return (comparator1 <= comparator2);
 }
 
 void simulateGame(struct Player *player){
