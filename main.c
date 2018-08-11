@@ -58,8 +58,10 @@ int main()
     printf("[*] Seeding random number generator\n");
     srand(time(0));
 
-    printf("[*] Creating Player struct\n");
-    struct Player *player = malloc(sizeof(struct Player));
+    //printf("[*] Creating Player struct\n");
+    struct Player p;
+    //struct Player *player = malloc(sizeof(struct Player));
+    struct Player *player = &p;
 
     printf("[*] Initializing Player struct to default values\n");
     initializePlayer(player);
@@ -70,16 +72,16 @@ int main()
     simulateGame(player);
     printPlayer(player);
 
-    printf("[*] Simulating 1,000,000,000 games ignoring previous simulation\n");
+    printf("[*] Simulating 10,000,000 games ignoring previous simulation\n");
     initializePlayer(player); // delete old data from previous single simulation
-    for(int i = 0; i < 1000000000; i++){
+    for(int i = 0; i < 10000000; i++){
         simulateGame(player);
     }
     printPlayer(player);
 
 
 
-    printf("[*] Freeing Player struct\n");
-    free(player);
+    //printf("[*] Freeing Player struct\n");
+    //free(player);
     return 0;
 }
