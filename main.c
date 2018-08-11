@@ -17,7 +17,12 @@ void initializePlayer(struct Player *player){
 }
 
 void printPlayer(struct Player *player){
-    printf("\n=====\nWins: %d\nLosses: %d\nCurrent Chance: %.3f\nBoxes Collected: %d\n=====\n\n", player->wins, player->losses, player->current_chance, player->boxes_collected);
+    printf("\n=====\nWins: %d\n"
+           "Losses: %d\n"
+           "Current Chance: %.3f\n"
+           "Boxes Collected: %d\n"
+           "=====\n\n"
+           , player->wins, player->losses, player->current_chance, player->boxes_collected);
 }
 
 int rollPlayerWin(){
