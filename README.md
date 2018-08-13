@@ -9,52 +9,7 @@ On my hardware, simulating 1 billion games took only 36 seconds when written in 
 
 Example of output:
 
->[*] Seeding random number generator
-
-[*] Creating Player struct
-
-[*] Initializing Player struct to default values
-
-[*] Current status of Player struct
-
-=====
-
-Wins: 0
-
-Losses: 0
-
-Current Chance: 0.020
-
-Boxes Collected: 0
-
-=====
-
-[*] Simulating one game
-
-=====
-
-Wins: 1
-
-Losses: 0
-
-Current Chance: 0.040
-
-Boxes Collected: 0
-
-=====
-
-[*] Simulating 1,000,000,000 games ignoring previous simulation
-
-=====
-
-Wins: 500314929
-
+>Wins: 500314929
 Losses: 499685071
-
 Current Chance: 0.085
-
 Boxes Collected: 77404268
-
-=====
-
-[*] Freeing Player struct
