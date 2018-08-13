@@ -9,7 +9,7 @@ On my hardware, simulating 1 billion games took only 36 seconds when written in 
 
 Example of output:
 
-[*] Seeding random number generator
+>[*] Seeding random number generator
 
 [*] Creating Player struct
 
