@@ -10,6 +10,9 @@ On my hardware, simulating 1 billion games took only 36 seconds when written in 
 Example of output:
 
 >Wins: 500314929
+
 Losses: 499685071
+
 Current Chance: 0.085
+
 Boxes Collected: 77404268
